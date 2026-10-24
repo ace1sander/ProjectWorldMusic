@@ -1,55 +1,61 @@
-### ⚠️ Post content online at your own risk - SEGA has banned unofficial apps on social media of any type for unofficial versions of the game.
-**⚠️ This project is _not RetroSEKAI or OurStage_, as they are both shut down.**
-***This project is provided for educational purposes only, and is not affiliated with SEGA, Crypton, or Colorful Palette.***
+# 🌏 Project World Music
 
-This project may receive infrequent updates.
+**Every song. Every server. Offline, on your phone.**
 
-### Read up on the [mods](mods/README.md)
+Project World Music is a custom project based on [GridlessSekai6](https://github.com/UnknownSekai/GridlessSekai6)
+by UnknownSekai, which makes it possible: the game itself and all the code underneath come from their
+project. Project World Music adds songs, translations and features on top. If you like it, go give
+GridlessSekai6 a star too.
 
-> [!IMPORTANT]
-> We do NOT provide help or support for installing GridlessSekai 6 beyond these instructions. Do not open any Issues to ask for help, unless it is a bug.
+> [!WARNING]
+> **Project World Music is an unofficial fan project, made for educational purposes only.** It is not
+> affiliated with, endorsed by or connected to SEGA, Colorful Palette or Crypton Future Media in any way.
+> All rights to the game, its music, characters and assets belong to their respective owners.
+>
+> Unofficial versions of the game aren't welcome on social media: share it at your own risk.
 
-# GridlessSekai 6
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/UnknownSekai/GridlessSekai6/total) ![GitHub Repo stars](https://img.shields.io/github/stars/UnknownSekai/GridlessSekai6)
+---
 
-A fully **offline** archive of a certain popular mobile rhythm game (JP, v6.8.1 - released 2026). Yes, you can play it without internet!
+## ✨ What's inside
 
-This project is a culmination of ALL my knowledge. If you enjoy it, please **⭐ Star** the repo.
+- 🎵 **794 songs** in one Songs pack, from every server (JP, EN, TW, KR, CN), all difficulties, all unlocked.
+  To keep the download small, each song comes in **one version only** (no official covers or other
+  singers' versions)
+- 🌐 **English** titles, artists, singers and menus
+- 🎤 **Cover versions**: extra vocals by Adelina. Only *The Intense Voice of Hatsune Miku* fully works
+  for now; the *Our 16bit Wars* and *Abelia* covers are totally broken (also thanks for her covers again letting me use them)
+- 📥 **Chart Import**: turn any Sonolus chart into a playable chart, right on your phone
+- 👥 **Co-op**: play the same song with friends on the same Wi-Fi
+- 🃏 **Card Maker**: cards from your own pictures
+- 🎨 **App icon picker**: five icons, or any picture
 
-This app is a **sandbox** for not just in-game content, but also some mods.
+Full list: [FEATURES.md](FEATURES.md)
 
-> This project is partially AI-assisted with Claude, due to my unfamiliarity with C++. If you dislike it - don't use it. Nobody is forcing you to. I provide this notice as a courtesy to you.
+## 📲 Get it
 
-# Downloads
+1. Grab the APK from [Releases](../../releases/latest) and the Songs pack from one of the [mirrors](#-assets-songs-pack-mirrors).
+2. Install the APK, put the Songs pack in `Download/ProjectWorld/Songs/`.
+3. Open Project World Music.
 
-**[Latest Release](https://github.com/UnknownSekai/GridlessSekai6/releases/latest)** - check back here for updates!
+Step by step, with Chart Import and troubleshooting: [INSTALL.md](INSTALL.md)
 
-> [!TIP]
-> If you wish to be notified of updates, **👁️ Watch** the project and get emails for every release.
+### 📦 Assets (Songs pack) mirrors
 
-## Assets
+- **[Pixeldrain](https://pixeldrain.com/u/xW5D8kJi)**
 
-You need at least **23GB+ free** on your device. The more content you download, the more storage you will need.
+More mirrors will be added.
 
-You need **~69GB free** for FULL functionality of this app.
+## 🐞 Found a bug?
 
-Base assets don't change between releases.
+See [BUG_REPORTS.md](BUG_REPORTS.md), then open an [issue](../../issues).
 
-### Portioned Files
-A full install of ALL assets for this game is approximately *90 GB*. To mitigate this, we split the assets into portions you download based on what feature you want to play.
+## 💛 Thanks
 
-For file sizes and hashes, please refer to [HASHES.md](HASHES.md).
-
-- **[Download assets from archive.org](https://archive.org/details/pjsk_6.8.1_assets)**
-- **[Download assets from pan.dokidoki.su](https://pan.dokidoki.su/@s/RqfHtRvU) by [@256ni](https://github.com/256ni)**
-
-Any mirrors are appreciated, please open an issue to have them added (must include ALL iOS and Android assets)
-
-# Installing
-Refer to [INSTALL.md](INSTALL.md)
-
-# Issues
-
-Found a bug or have a suggestion? [Open an issue](https://github.com/UnknownSekai/GridlessSekai6/issues)!
-
-Sending your logs may be useful. See [LOGS.md](LOGS.md) for more info.
+- **[GridlessSekai6](https://github.com/UnknownSekai/GridlessSekai6)** by UnknownSekai: the base of everything here
+- [sonolus.sekai.best](https://sonolus.sekai.best) / [Sekai Viewer](https://sekai.best) and
+  [Sbuga](https://sonolus.sbuga.com): charts, audio and songs from other servers
+- [Sekai-World](https://github.com/Sekai-World): every server's song data
+- [Untitled Charts](https://untitledcharts.com) and the Sonolus community
+- [Termux](https://termux.dev)
+- Adelina, for the covers
+- Koryo, for testing

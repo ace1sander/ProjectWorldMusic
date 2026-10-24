@@ -1,78 +1,72 @@
-# Install Guide
-> [!IMPORTANT]
-> **DO NOT EXTRACT the zip.**
+# Installing Project World Music
 
-# UNOFFICIAL FAN-MADE GUIDE CAN BE FOUND HERE: https://patchednexus.win/glsk/6
-> [!IMPORTANT]
-> We do NOT provide help or support for installing GridlessSekai 6 beyond these instructions. Do not open any Issues to ask for help, unless it is a bug.
+You'll need an **arm64 Android** phone or tablet and about **6 GB** free.
 
-## Android
+| Download | Size | |
+|----------|-----:|---|
+| `Project World vX.YY.apk` | ~1.7 GB | the app |
+| Songs pack (`.zip`) | ~2.4 GB | every song. Without it you only get one |
 
-#### 1. Install the APK
-- Transfer `GS6.apk` to your device and install it
-- **Open the app once**, wait for the title screen or an error, then close it (this creates the data folder)
+Get the Songs pack from a mirror: **[Pixeldrain](https://pixeldrain.com/u/xW5D8kJi)** (more mirrors will be added).
 
-#### 2. Copy assets
-
-Download the assets (at least `base_android.zip`) to your device's Downloads folder, then copy it to the app's data directory using one of these methods:
-
-NOTE: experienced users, you just need to move the `assets_android.zip` to `/sdcard/Android/data/com.utsk.gridlesssekai6/files/`. You can do this with any method you want (such as root).
-
-> [!TIP]
-> The path `/sdcard/Android/obb/com.utsk.gridlesssekai6/` is also supported. Use this if needed.
-
-**Option A: ADB (PC required)**
-
-Download `base_android.zip` to your PC, then run:
-```
-adb push base_android.zip /sdcard/Android/data/com.utsk.gridlesssekai6/files/base_android.zip
-```
-(replace `base_android.zip` in the last command with whatever file you're installing).
-
-**Option B: Shizuku (no PC, no root)**
-1. Download the assets on your device (at least `base_android.zip`)
-2. 2. Install [Shizuku](https://shizuku.rikka.app) and start it via Wireless Debugging ([guide](https://shizuku.rikka.app/guide/setup/#start-via-wireless-debugging))
-3. Install ZArchiver (or another Shizuku-compatible file manager)
-4. Move the file from `Downloads` to `/sdcard/Android/data/com.utsk.gridlesssekai6/files`
-
-**Option C: Termux (no PC, no root)**
-1. Download the assets on your device (at least `base_android.zip`)
-2. Install [Termux](https://f-droid.org/en/packages/com.termux/) from F-Droid
-3. Enable Wireless Debugging in Developer Options, then in Termux:
-   ```
-   pkg install android-tools
-   adb pair localhost:<port>   # use pairing code from Settings
-   adb connect localhost:<port>
-   adb shell run-as com.utsk.gridlesssekai6 cp /sdcard/Download/base_android.zip ./files/base_android.zip
-   ```
-   (replace `base_android.zip` in the last command with whatever file you're installing).
-
-> [!IMPORTANT]
-> **DO NOT EXTRACT the zips.**
-
-#### 3. Play
-Open the app. The game will "download" assets locally (~23GB), so make sure you have 23GB+ free.
+Checksums: [CHECKSUMS.md](CHECKSUMS.md)
 
 ---
 
-## iOS
+## 1 · The app
 
-#### 1. Install the IPA
-**SIDELOAD!** Search on Google/YouTube, there are guides! We recommend using [Impactor (NEEDS PC)](https://github.com/claration/Impactor).
+Install the APK (let your browser or file manager install apps if Android asks). Updating? Install
+over the old version; your progress stays.
 
-Example YouTube searches: `sideload ios no pc`, `sideload ios impactor` (requires PC).
+## 2 · The songs
 
-**Do not open the app yet.**
+Put the Songs pack zip, **as it is, not unzipped**, in:
 
-#### 2. Move assets
-- Download the assets (at least `base_ios.zip`)
-- Open the **Files** app
-- Navigate to **On My iPhone** -> **GridlessSekai6**
-  - If you don't see it, make sure File Sharing is enabled (most sideloaders have a "Force File Sharing" option)
-- Move your downloaded files here.
+```
+Download/ProjectWorld/Songs/
+```
 
-> [!IMPORTANT]
-> **DO NOT EXTRACT the zips.**
+Create the folders if they're not there. Keep just **one** zip in that folder; any file name works.
 
-#### 3. Play
-Open the app. The game will "download" assets locally (~23GB), so make sure you have 23GB+ free.
+## 3 · First start
+
+Open Project World Music and allow **All files access** when it asks (that's how it reads your songs and
+charts). The first start after installing or updating unpacks the game, with a progress bar, which takes a
+minute or two. Then tap the title screen and play. 🎶
+
+---
+
+## 📥 Custom charts
+
+**Have chart files?** Drop `.android.chart.gs6` files into `Download/ProjectWorld/Charts/` and restart.
+They're in **Solo Live › Custom**. Delete a file to remove its chart.
+
+**Want to import from Sonolus?**
+1. Install [Termux](https://f-droid.org/en/packages/com.termux/) from F-Droid or GitHub (the Play Store
+   version won't work).
+2. Long-press the Project World Music icon → **Import Chart**.
+3. First time only: **Copy setup command** → **Open Termux** → paste → Enter → **Allow**. It runs for
+   10–20 minutes (about 2.5 GB) and finishes with `== Done`.
+4. Paste a chart link, tap **Convert**, then **Done**, and open the game again.
+
+Changed your mind? Import Chart → **Remove converter**.
+
+## 👥 Co-op
+
+Same Wi-Fi, same Songs pack, everyone on Project World Music. One player makes a room in **Live › Co-op**, the
+others join.
+
+## 🎨 App icon
+
+Long-press the icon → **App icon**.
+
+---
+
+## Something wrong?
+
+| What you see | Try this |
+|--------------|----------|
+| Only one song | Songs pack not in `Download/ProjectWorld/Songs/`, or All files access is off (Settings › Apps › Project World Music) |
+| Stuck while unpacking | Free up some space and open the app again |
+| "Termux didn't start the converter" | Open Termux once, then try again; on Xiaomi/HyperOS let Termux run in the background |
+| It crashed | Open it again: it shows what went wrong. Then see [BUG_REPORTS.md](BUG_REPORTS.md) |
