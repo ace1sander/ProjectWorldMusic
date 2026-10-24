@@ -2,6 +2,9 @@
 
 You'll need an **arm64 Android** phone or tablet and about **6 GB** free.
 
+> [!NOTE]
+> **No iOS yet.** iPhone and iPad aren't supported right now, but support should be coming soon.
+
 | Download | Size | |
 |----------|-----:|---|
 | `Project World vX.YY.apk` | ~1.7 GB | the app |

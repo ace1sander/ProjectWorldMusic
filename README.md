@@ -33,6 +33,9 @@ Full list: [FEATURES.md](FEATURES.md)
 
 ## 📲 Get it
 
+> [!NOTE]
+> **Android only for now.** iOS isn't supported yet, but it should be coming soon.
+
 1. Grab the APK from [Releases](../../releases/latest) and the Songs pack from one of the [mirrors](#-assets-songs-pack-mirrors).
 2. Install the APK, put the Songs pack in `Download/ProjectWorld/Songs/`.
 3. Open Project World Music.
